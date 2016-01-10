@@ -13,6 +13,13 @@
 		E25C72EA1C3B2D620001813A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E25C72E91C3B2D620001813A /* Assets.xcassets */; };
 		E25C72ED1C3B2D620001813A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E25C72EB1C3B2D620001813A /* LaunchScreen.storyboard */; };
 		E25C72F81C3B2D620001813A /* AudioAdventureSandboxUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25C72F71C3B2D620001813A /* AudioAdventureSandboxUITests.swift */; };
+		E2B753E11C3F23F500D58ADB /* Map.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B753E01C3F23F500D58ADB /* Map.swift */; };
+		E2B753E31C3F246C00D58ADB /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B753E21C3F246C00D58ADB /* Location.swift */; };
+		E2B753E71C3F2B6A00D58ADB /* One.m4a in Resources */ = {isa = PBXBuildFile; fileRef = E2B753E41C3F2B6A00D58ADB /* One.m4a */; };
+		E2B753E81C3F2B6A00D58ADB /* Three.m4a in Resources */ = {isa = PBXBuildFile; fileRef = E2B753E51C3F2B6A00D58ADB /* Three.m4a */; };
+		E2B753E91C3F2B6A00D58ADB /* Two.m4a in Resources */ = {isa = PBXBuildFile; fileRef = E2B753E61C3F2B6A00D58ADB /* Two.m4a */; };
+		E2B753EC1C41635F00D58ADB /* MapBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B753EB1C41635F00D58ADB /* MapBuilder.swift */; };
+		E2B753F01C416CC800D58ADB /* aa.json in Resources */ = {isa = PBXBuildFile; fileRef = E2B753EF1C416CC800D58ADB /* aa.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +43,13 @@
 		E25C72F31C3B2D620001813A /* AudioAdventureSandboxUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AudioAdventureSandboxUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E25C72F71C3B2D620001813A /* AudioAdventureSandboxUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioAdventureSandboxUITests.swift; sourceTree = "<group>"; };
 		E25C72F91C3B2D620001813A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E2B753E01C3F23F500D58ADB /* Map.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Map.swift; sourceTree = "<group>"; };
+		E2B753E21C3F246C00D58ADB /* Location.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		E2B753E41C3F2B6A00D58ADB /* One.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = One.m4a; sourceTree = "<group>"; };
+		E2B753E51C3F2B6A00D58ADB /* Three.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = Three.m4a; sourceTree = "<group>"; };
+		E2B753E61C3F2B6A00D58ADB /* Two.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = Two.m4a; sourceTree = "<group>"; };
+		E2B753EB1C41635F00D58ADB /* MapBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapBuilder.swift; sourceTree = "<group>"; };
+		E2B753EF1C416CC800D58ADB /* aa.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = aa.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +73,7 @@
 		E25C72D61C3B2D620001813A = {
 			isa = PBXGroup;
 			children = (
+				E2B753EF1C416CC800D58ADB /* aa.json */,
 				E25C72E11C3B2D620001813A /* AudioAdventureSandbox */,
 				E25C72F61C3B2D620001813A /* AudioAdventureSandboxUITests */,
 				E25C72E01C3B2D620001813A /* Products */,
@@ -77,8 +92,12 @@
 		E25C72E11C3B2D620001813A /* AudioAdventureSandbox */ = {
 			isa = PBXGroup;
 			children = (
+				E2B753EA1C3F2B7300D58ADB /* Audio */,
 				E25C72E21C3B2D620001813A /* AppDelegate.swift */,
 				E25C72E41C3B2D620001813A /* ViewController.swift */,
+				E2B753E01C3F23F500D58ADB /* Map.swift */,
+				E2B753EB1C41635F00D58ADB /* MapBuilder.swift */,
+				E2B753E21C3F246C00D58ADB /* Location.swift */,
 				E25C72E61C3B2D620001813A /* Main.storyboard */,
 				E25C72E91C3B2D620001813A /* Assets.xcassets */,
 				E25C72EB1C3B2D620001813A /* LaunchScreen.storyboard */,
@@ -94,6 +113,16 @@
 				E25C72F91C3B2D620001813A /* Info.plist */,
 			);
 			path = AudioAdventureSandboxUITests;
+			sourceTree = "<group>";
+		};
+		E2B753EA1C3F2B7300D58ADB /* Audio */ = {
+			isa = PBXGroup;
+			children = (
+				E2B753E41C3F2B6A00D58ADB /* One.m4a */,
+				E2B753E51C3F2B6A00D58ADB /* Three.m4a */,
+				E2B753E61C3F2B6A00D58ADB /* Two.m4a */,
+			);
+			name = Audio;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -180,8 +209,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				E25C72ED1C3B2D620001813A /* LaunchScreen.storyboard in Resources */,
+				E2B753E71C3F2B6A00D58ADB /* One.m4a in Resources */,
 				E25C72EA1C3B2D620001813A /* Assets.xcassets in Resources */,
+				E2B753F01C416CC800D58ADB /* aa.json in Resources */,
+				E2B753E91C3F2B6A00D58ADB /* Two.m4a in Resources */,
 				E25C72E81C3B2D620001813A /* Main.storyboard in Resources */,
+				E2B753E81C3F2B6A00D58ADB /* Three.m4a in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -200,6 +233,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				E25C72E51C3B2D620001813A /* ViewController.swift in Sources */,
+				E2B753E11C3F23F500D58ADB /* Map.swift in Sources */,
+				E2B753EC1C41635F00D58ADB /* MapBuilder.swift in Sources */,
+				E2B753E31C3F246C00D58ADB /* Location.swift in Sources */,
 				E25C72E31C3B2D620001813A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -388,6 +424,7 @@
 				E25C72FE1C3B2D620001813A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E25C72FF1C3B2D620001813A /* Build configuration list for PBXNativeTarget "AudioAdventureSandboxUITests" */ = {
 			isa = XCConfigurationList;
@@ -396,6 +433,7 @@
 				E25C73011C3B2D620001813A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

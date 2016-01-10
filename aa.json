@@ -1,0 +1,28 @@
+{
+	"aa" : [
+		{
+			"name" : "one",
+			"audio" : "One.m4a",
+            "entrance" : false,
+			"paths" : {
+				"north" : "two"
+			}
+		},
+		{
+			"name" : "two",
+			"audio" : "Two.m4a",
+            "entrance" : true,
+			"paths" : {
+				"north" : "three",
+				"south" : "one"
+			}
+		},
+		{
+			"name" : "three",
+			"audio" : "Three.m4a",
+			"paths" : {
+				"south" : "two"
+			}
+		}
+	]
+}
